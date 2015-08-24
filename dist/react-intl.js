@@ -2461,7 +2461,7 @@
                 }, messages);
             } finally {
                 if (message === undefined) {
-                    throw new ReferenceError('Could not find Intl message: ' + path);
+                    return path;
                 }
             }
 
